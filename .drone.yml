@@ -6,4 +6,4 @@ steps:
 - name: test
   image: maven:3-jdk-10
   commands:
-  - mvn -Prelease-nacos clean install -U
+  - mvn -Prelease-nacos clean install -U -Drat.skip=true -Dmaven.test.skip=true
